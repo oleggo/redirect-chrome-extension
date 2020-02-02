@@ -1,5 +1,5 @@
 .root {
-  min-width: 200px;
+  min-width: 250px;
   min-height: 150px;
   padding: 1em;
   display: flex;
@@ -36,11 +36,25 @@
 .rule {
   display: flex;
   flex-direction: row;
-  border-top: solid 1px #ccc;
+  border-left: solid 1px #ccc;
+  border-right: solid 1px #ccc;
+  padding: 1em;
+}
+
+.rule:nth-child(even) {
+  background: #f0f0f0;
 }
 
 .rule:last-child {
   border-bottom: solid 1px #ccc;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.rule:first-child {
+  border-top: solid 1px #ccc;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .ruleDescription {
@@ -63,5 +77,5 @@
 }
 
 .imageOff {
-  color: #ccc;
+  color: #bbb;
 }

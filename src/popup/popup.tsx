@@ -38,7 +38,6 @@ export class Popup extends React.Component<{}, State> {
           <div key={group.name} className={style.rule}>
             <div className={style.ruleDescription}>
               <div className={style.name}>{group.name}</div>
-              <div className={style.path}>{`${group.rules.length} rules`}</div>
             </div>
             <div className={style.image}>{group.enabled ? <span className={style.imageOn}>ON</span> : <span className={style.imageOff}>OFF</span>}</div>
           </div>

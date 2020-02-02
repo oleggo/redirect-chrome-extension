@@ -43,9 +43,6 @@ export class Setup extends React.Component<{}, State> {
 
   save = () => {
     setSettings(this.state.settings);
-    chrome.runtime.sendMessage({
-      settingsChanged: true,
-    });
   };
 
   private toggleGroup(group: RuleGroup) {

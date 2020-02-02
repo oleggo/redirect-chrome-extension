@@ -125,14 +125,21 @@ export function setSettings(s: Settings) {
     null,
     '  ',
   );
-  chrome.storage.sync.set({
-    config: text,
-  });
-  settings = JSON.parse(text);
-  prepareSettings();
-  if (onSettingsChanged) {
-    onSettingsChanged(settings);
-  }
+  chrome.storage.sync.set(
+    {
+      config: text,
+    },
+    () => {
+      settings = JSON.parse(text);
+      prepareSettings();
+      if (onSettingsChanged) {
+        onSettingsChanged(settings);
+      }
+      chrome.runtime.sendMessage({
+        settingsChanged: true,
+      });
+    },
+  );
 }
 
 chrome.runtime.onMessage.addListener(function(request) {
