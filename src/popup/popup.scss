@@ -1,0 +1,67 @@
+.root {
+  min-width: 200px;
+  min-height: 150px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 14pt;
+  padding-bottom: 0.5em;
+}
+
+.actions {
+  text-align: right;
+}
+
+.rules {
+  flex: 1;
+  padding-bottom: 1em;
+}
+
+.name {
+  font-size: 12pt;
+}
+
+.path {
+  font-size: 9pt;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rule {
+  display: flex;
+  flex-direction: row;
+  border-top: solid 1px #ccc;
+}
+
+.rule:last-child {
+  border-bottom: solid 1px #ccc;
+}
+
+.ruleDescription {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageOn {
+  color: green;
+  font-weight: bold;
+}
+
+.imageOff {
+  color: #ccc;
+}

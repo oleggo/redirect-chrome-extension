@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~*": ["./src/*"]
+    },
+    "typeRoots": [
+      "node_modules/@types",
+      "node_modules/phaser/types"
+    ],
+    "jsx": "react",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "lib": ["es2018", "dom"],
+    "target": "es2017",
+    "module": "commonjs",
+    "experimentalDecorators": true
+  },
+  "include": ["./src/**/*", "./types/global.d.ts"]
+}

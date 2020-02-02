@@ -1,0 +1,84 @@
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  flex: 1 1;
+}
+
+.rules, .rule {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.rule {
+  padding: 2em;
+}
+
+.body {
+  flex: 1;
+}
+
+.actions {
+  padding: 1em;
+  text-align: right;
+}
+
+.actions button {
+  margin-left: 1em;
+}
+
+.editGroupActions {
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+}
+
+.editGroupActions .span {
+  flex: 1 1;
+}
+
+.editGroupActions button + button {
+  margin-left: 1em;
+}
+
+.editRule {
+  display: flex;
+  flex-direction: row;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  padding: 1em;
+}
+
+.editRule + .editRule {
+  margin-top: 1em;
+}
+
+.editRuleRules {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.editSrc {
+  margin-bottom: 1em;
+}
+
+.editTgt {
+
+}
+
+.editRuleActions {
+  display: flex;
+  flex-direction: column;
+}
+
+.name + .name {
+  margin-top: 1em;
+}
+
+.test {
+  width: 80vw;
+}
