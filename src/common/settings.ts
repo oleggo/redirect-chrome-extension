@@ -22,6 +22,7 @@ const RegexSpecialChars = {
   '>': true,
   '-': true,
   '&': true,
+  '/': true,
 };
 
 function decorateForRegex(rule: string): string {
